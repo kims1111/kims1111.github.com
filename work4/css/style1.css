@@ -1,0 +1,600 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Montserrat+Subrayada:wght@700&family=Gamja+Flower&family=Stylish&display=swap');
+
+
+* {
+	margin:0;
+	padding:0;
+}
+li {
+	list-style:none;
+}
+a {
+	text-decoration:none;
+}
+
+/*header*/
+.header {
+	float:left;
+	width:100%;
+	height:100px;
+	position:relative;
+	z-index:9;
+	transition:background 0.5s ease;
+}
+
+.logo {
+	width:10%;
+	float:left;
+	height:100px;
+}
+.logo a {
+	display:block;
+	width:100%;
+	height:100%;
+}
+.logo a img {
+	width:100%;
+	height:100%;
+}
+nav {
+	width:90%;
+	float:left;
+}
+.gnb {
+	width:90%;
+	float:right;
+	height:50px;
+	margin-top:30px;
+}
+.gnb > li {
+	width:12.5%;
+	float:left;
+	text-align:center;
+}
+.gnb > li > a {
+	color:#fff;
+	font-size:24px;
+	text-transform:uppercase;
+	font-weight:bold;
+	text-shadow:1px 1px 3px #666;
+	transition:color 0.5s ease;
+    font-family: 'Stylish', sans-serif;
+}
+.menuClose {
+	width:20px;
+	height:20px;
+	position:absolute;
+	top:5px;
+	right:5px;
+	display:none;
+}
+.menuClose span {
+	width:100%;
+	height:7px;
+	background:#fff;
+	display:block;
+	position:absolute;
+	top:50%;
+	transform:translateY(-50%);
+	border-radius:20px;
+
+}
+.menuClose span:first-child {
+	transform:rotate(45deg);
+}
+.menuClose span:last-child {
+	transform:rotate(-45deg);
+}
+.menuBtn {
+	width:40px;
+	height:40px;
+	position:absolute;
+	right:10px;
+	top:10px;
+	display:none;
+	cursor:pointer;
+}
+.menuBtn span {
+	display:block;
+	width:100%;
+	height:5px;
+	background:#fff;
+	border-radius:20px;
+}
+.menuBtn span:nth-child(2) {
+	margin:10px 0;
+} 
+
+#contents2 {
+	width:100%;
+	height:100vh;
+	position:relative;
+}
+#contents2::before {
+    background:url(../image/roomboxbg.jpg) center/cover no-repeat;
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100vh;
+    filter:opacity(30%);
+    z-index:-1;
+}
+.roomBox {
+	width:70%;
+	height:70%;
+	background:#333;
+	position:absolute;
+	top:60%;
+	left:50%;
+    transform:translate(-50%,-50%);
+    display:flex;
+    flex-direction:column;
+    flex-wrap:wrap;
+    box-shadow:5px 5px 5px #000;
+    overflow:hidden;
+}
+.roomBox .box1 {
+	width:50%;
+	height:50%;
+	background:#fff;
+	position:relative;
+}
+.box1 li {
+	width:100%;
+	height:100%;
+	position:absolute;
+    top:0;
+}
+.box1 li:not(:first-child) {
+	display:none;
+}
+.box1 li img {
+	width:100%;
+	height:100%;
+	object-fit:cover;
+}
+.roomBox .box2 {
+	width:50%;
+	height:50%;
+}
+.box2_img {
+	width:50%;
+	height:100%;
+    float:left;
+    position:relative;
+}
+.box2_img li {
+	position:absolute;
+	width:100%;
+	height:100%;
+}
+.box2_img li:not(:first-child){
+	display:none;
+}
+.box2_img li img {
+	width:100%;
+	height:100%;
+}
+.box2_p {
+	width:50%;
+	height:100%;
+	float:left;
+	position:relative;
+}
+.box2_p li {
+	position:absolute;
+	width:100%;
+	height:100%;
+	text-align:center;
+}
+.box2_p li h3 {
+	font-size:30px;
+	color:#fff;
+	margin-top:30px;
+}
+.box2_p li hr {
+	width:10px;
+	margin:30px auto;
+}
+.box2_p li p {
+	color:#999;
+}
+.box2_p li a {
+    border:1px solid #eee;
+    padding:10px 30px;
+    position:absolute;
+    top:80%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    border-radius:10px;
+    color:#fff;
+    transition:0.5s ease;
+ }
+.box2_p li:not(:first-child){
+	display:none;
+}
+.roomBox .box3 {
+	width:50%;
+	height:100%;
+	position:relative;
+}
+.box3 li {
+	width:100%;
+	height:100%;
+	position:absolute;
+}
+.box3 li:not(:first-child){
+	display:none;
+}
+.box3 li img {
+	width:100%;
+	height:100%;
+}
+#contents2 h2 {
+	text-align:center;
+	padding-top:20px;
+	font-size:50px;
+	font-family: 'Fredericka the Great', cursive;
+	color:#0383b0;
+}
+.abox {
+	position:absolute;
+	left:50%;
+	top:20%;
+	transform:translate(-50%,-50%);
+	width:25%;
+	display:flex;
+	justify-content:space-between;
+}
+.abox a {
+	font-size:30px;
+	color:brown;
+    font-family: 'Gamja Flower', cursive;
+    font-weight: bold;
+}
+#contents4 {
+	width:100%;
+	height:100vh;
+	position:relative;
+}
+#contents4::before {
+	content:"";
+	background:url(../image/back3.jpg);
+	width:100%;
+	height:100vh;
+	position:absolute;
+	top:0;
+	left:0;
+	filter:brightness(15%);
+	z-index:-1;
+}
+#contents4 > h2 {
+	color:#fff;
+	font-family: 'Fredericka the Great', cursive;
+	font-size:50px;
+	text-align:center;
+	padding-top:30px;
+}
+.previewChart {
+	width:300px;
+	height:auto;
+	position:absolute;
+	left:25%;
+	top:30%;
+}
+.previewChart li{
+    width:100%;
+    height:70px;
+}
+.previewChart li img {
+	width:40px;
+	height:40px;
+	cursor:pointer;
+}
+.previewChart li span {
+	font-size:30px;
+	color:#fff;
+	display:inline-block;
+	width:auto;
+	height:40px;
+	margin-left:20px;
+	cursor:pointer;
+	vertical-align:top;
+	transition:color 0.5s ease;
+	font-family: 'Gamja Flower', cursive;
+}
+.previewImg {
+	width:50%;
+	height:100vh;
+	position:absolute;
+	right:0;
+	top:0;
+	perspective:500px;
+}
+.previewImg li {
+	width:80%;
+	height:400px;
+	position:absolute;
+    left:50%;
+    top:50%;
+    transform:translate(-50%, -50%) scale(1);
+    transform-origin:top;
+
+}
+.previewImg li:not(:first-child){
+	display:none;
+}
+.previewImg li img{
+	width:100%;
+	height:100%;
+	object-fit:fill;
+	border-radius:10px;
+}
+.rotate{
+	animation:ro 0.8s linear forwards;
+}
+.rotate1 {
+	animation:ro1 0.8s linear forwards;
+
+}
+
+#servicecontents {
+	width:100%;
+	height:100vh;
+	position:relative;
+}
+#servicecontents::before {
+	content:"";
+	background:var(--background,url(../image/service/food.jpg));
+	width:100%;
+	height:100vh;
+	position:absolute;
+	top:0;
+	left:0;
+	filter:brightness(15%);
+	z-index:-1;
+}
+#servicecontents > h2 {
+	color:#fff;
+	font-family: 'Fredericka the Great', cursive;
+	font-size:50px;
+	text-align:center;
+	padding-top:30px;
+}
+
+.serviceMenu {
+	position:absolute;
+	bottom:30px;
+	left:50%;
+	transform:translateX(-50%);
+	width:auto;
+	height:auto;
+}
+.serviceMenu li {
+	float:left;
+	width:150px;
+	text-align:center;
+	font-weight:bold;
+	color:#fff;
+	font-size:20px;
+	cursor:pointer;
+	transition:0.5s ease;
+	font-family: 'Fredericka the Great', cursive;
+}
+.serviceMenu li:hover {
+	color:#fe1010;
+}
+.serviceView {
+	width:80%;
+	height:65vh;
+	position:absolute;
+	top:20%;
+	left:50%;
+	transform:translateX(-50%);
+	overflow:hidden;
+}
+.serviceView li {
+	width:100%;
+	height:100%;
+	position:absolute;
+}
+.serviceView li:not(:first-child){
+	display:none;
+}
+.serviceView li:last-child p {
+	font-size:25px;
+}
+.serviceView li img {
+	width:70%;
+	height:100%;
+	float:left;
+}
+.serviceView li p {
+	float:left;
+	width:30%;
+	color:#fff;
+	font-size:30px;
+	text-align:center;
+	position:absolute;
+	top:0;
+	right:0;
+	height:100%;
+	background:#333;
+	line-height:2;
+}
+.footer {
+	width:100%;
+	height:100px;
+	background:#333;
+}
+.footerBox {
+	text-align:center;
+}
+.footerBox p {
+	color:#666;
+	font-size:12px;
+	line-height:20px;
+}
+@keyframes ro {
+	0%{
+		transform:translate(-50%, -50%) scale(1);
+		opacity:1;
+	}
+	100% {
+		transform:translate(-50%, -50%) scale(0.5) rotateX(-100deg);
+		opacity:0; 
+	}
+}
+@keyframes ro1 {
+	0%{
+		transform:translate(-50%, -50%) scale(0.5) rotateX(100deg);
+		opacity:0;
+	}
+	100% {
+		transform:translate(-50%, -50%) scale(1) rotateX(0);
+		opacity:1; 
+	}
+	}
+
+
+
+@media(max-width:1280px){
+	.roomBox .box1 {
+		width:30%;
+		height:33%;
+	}
+	.roomBox .box2 {
+		width:30%;
+		height:66.6666%;
+	}
+	.box2_img {
+		width:100%;
+		height:50%;
+	}
+	.box2_p {
+		width:100%;
+		height:50%;
+	}
+	.box2_p > li > h3 {
+		font-size:18px;
+	}
+	.box2_p > li > hr {
+		margin:10px auto;
+	}
+	.box2_p > li > a {
+		font-size:14px;
+	}
+	.roomBox .box3 {
+		width:70%;
+	}
+	.serviceView li p {
+		font-size:20px;
+		padding-top:50px;
+	}
+	.serviceView li:last-child p{
+		font-size:18px;
+	}
+}
+@media(max-width:600px){
+	body {
+		overflow:hidden;
+	}
+	.logo{
+		width:100%;
+	}
+	.header {
+		height:auto;
+	}
+	.logo a {
+		width:50%;
+	}
+	.gnb {
+		width:50%;
+		position:absolute;
+		top:0;
+		right:-500px;
+		display:none;
+	}
+	.gnb li {
+		float:none;
+		width:100%;
+		height:30px;
+	}
+	.menuBtn {
+		display:block;
+		z-index:9;
+	}
+    .abox {
+    	top:37%;
+    }
+    .roomBox {
+    	height:50vh;
+    	width:100%;
+    	top:70%;
+    }
+    .box2_p > li > h3 {
+    	font-size:10px;
+    	margin-top:5px;
+    }
+    .box2_p > li > p {
+    	display:none;
+    }
+    .box2_p > li > a {
+    	font-size:10px;
+    	padding:5px 10px;
+    	top:60%;
+    }
+    .previewChart {
+    	width:100%;
+    	height:20vh;
+    	left:0;
+    	top:35%;
+    	display:flex;
+    	justify-content:space-around;
+    }
+    .previewChart li {
+    	width:30px;
+    	height:auto;
+    	float:left;
+    }
+    .previewChart li img {
+    	width:30px;
+    	height:30px;
+    }
+    .previewChart li span{
+    	font-size:14px;
+    	margin:0;
+    	writing-mode:vertical-lr;
+    	height:100px;
+    }
+    .previewImg {
+    	width:100%;
+    	height:40vh;
+    	top:55%;
+    }
+    .previewImg li {
+    	height:100%;
+    }
+    .serviceView {
+    	width:100%;
+    	height:40vh;
+    	top:37%;
+    }
+    .serviceView li img {
+    	width:100%;
+    	float:none;
+    }
+    .serviceView li p {
+    	height:auto;
+    	font-size:10px;
+    	float:none;
+    	padding:0;
+    	width:100%;
+    }
+    .serviceView li:last-child p {
+    	font-size:10px;
+    }
+}
